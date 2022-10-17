@@ -1,0 +1,23 @@
+.loginContainer {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 839px;
+    border-radius: 15px;
+    background: var(--background);
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+/* .logoContainer {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+} */
+
+/* .signIn {
+    flex-basis: 70%;
+} */

@@ -1,9 +1,12 @@
 import Login from "./views/login/login";
+import "./style.css";
 
 function App() {
   return (
     <div className="App">
-      <Login />
+      <div>
+        <Login />
+      </div>
     </div>
   );
 }

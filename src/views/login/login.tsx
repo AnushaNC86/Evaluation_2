@@ -1,10 +1,16 @@
-import React from "react";
+import Logo from "../../components/logo/logo";
+import SignIn from "../../components/signIn/signIn";
+import "./login.css";
 
 const Login = () => {
   return (
     <div className="loginContainer">
-      <div className="logo">logo</div>
-      <div className="formContianer">form</div>
+      <div className="logoContainer">
+        <Logo />
+      </div>
+      <div className="signIn">
+        <SignIn />
+      </div>
     </div>
   );
 };

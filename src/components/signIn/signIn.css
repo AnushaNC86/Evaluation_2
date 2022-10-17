@@ -1,0 +1,23 @@
+.formContianer {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.signInHead {
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1.67px;
+}
+
+.inputFields {
+    height: 54px;
+    width: 332px;
+    border: 0.55px solid rgba(208, 208, 208, 0.5);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    outline: none;
+    border: none;
+}
