@@ -1,18 +1,14 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
-import "./signIn.css";
-
-const SignIn = () => {
-  const [password, setPassword] = useState<boolean>(false);
-
+const SignUp = () => {
+  const [password, setPassword] = useState(false);
   const togglePassword = () => {
     setPassword(!password);
   };
   return (
-    <div>
-      <div className="signInHead">SIGN IN TO YOUR ACCOUNT</div>
+    <>
       <form className="formContianer">
+        <div className="signInHeading">SIGN UP</div>
         <div className="inputField">
           <input
             type="text"
@@ -20,16 +16,27 @@ const SignIn = () => {
             id="mobile"
             className="inputFields"
             placeholder="Mobile number"
-          />{" "}
+          />
+        </div>
+        <div className="inputField">
+          <div className="loginPW">
+            <input
+              type="password"
+              name="mpin"
+              id="mpin"
+              className="inputFields"
+              placeholder="Enter 4 Digit MPin"
+            />
+          </div>
         </div>
         <div className="inputField">
           <div className="loginPW">
             <input
               type={password ? "text" : "password"}
-              name="mpin"
-              id="mpin"
+              name="cmpin"
+              id="cmpin"
               className="inputFields"
-              placeholder="Mpin"
+              placeholder="Re-enter 4 Digit MPin"
             />
             <img
               src={require("../../assets/icons/eye_on.png")}
@@ -39,19 +46,12 @@ const SignIn = () => {
             />
           </div>
         </div>
-        <div className="forgotPassword">Forgot your password?</div>
         <div>
-          <button className="btnSubmit">SIGN IN</button>
+          <button className="btnRegSubmit">SIGN UP</button>
         </div>
       </form>
-      <div className="signUp">
-        Don’t have a Account?{" "}
-        <Link to="/signup" className="signUpLink">
-          SIGNUP
-        </Link>
-      </div>
-    </div>
+    </>
   );
 };
 
-export default SignIn;
+export default SignUp;

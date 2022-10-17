@@ -1,13 +1,11 @@
 import Logo from "../../components/logo/logo";
 import SignIn from "../../components/signIn/signIn";
-import "./login.css";
+import "./loginPage.css";
 
-const Login = () => {
+const LoginPage = () => {
   return (
     <div className="loginContainer">
-      <div className="logoContainer">
-        <Logo />
-      </div>
+      <Logo />
       <div className="signIn">
         <SignIn />
       </div>
@@ -15,4 +13,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

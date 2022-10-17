@@ -1,7 +1,7 @@
 import "./logo.css";
 const Logo = () => {
   return (
-    <div>
+    <div className="logo">
       <div className="logoTextContainer">
         <div className="logoImg">
           <img src={require("../../assets/Images/logo.png")} alt="" />
