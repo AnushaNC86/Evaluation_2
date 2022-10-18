@@ -1,4 +1,13 @@
 .home {
-    position: absolute;
+    position: relative;
     margin: var(--marginValue)
+}
+
+.topBar {
+    position: absolute;
+    /* top: -8px; */
+    bottom: 10px;
+    left: 7.5rem;
+    right: 0;
+    background-color: brown;
 }

@@ -1,0 +1,10 @@
+.sideBarContainer {
+    background: #2892FF;
+    position: fixed;
+    margin: var(--marginValue);
+    width: 8rem;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
