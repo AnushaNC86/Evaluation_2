@@ -1,9 +1,32 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 98vh;
+}
+
 .loginContainer {
     display: flex;
     flex-direction: row;
-    width: 839px;
+    width: auto;
     border-radius: 15px;
     background: var(--background);
     box-shadow: var(--shadow);
+    justify-content: center;
 
+}
+
+
+@media only screen and (max-width: 700px) {
+    .loginContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        border: none;
+        border-bottom: 0.5px solid rgb(255 251 251 / 24%);
+        display: flex;
+    }
 }

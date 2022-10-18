@@ -3,6 +3,11 @@
 :root {
     --background: linear-gradient(180deg, #20bbff 0%, #0e85ff 100%);
     --shadow: 0 8px 18px 10px rgba(0, 0, 0, 0.02);
+    --successGreen: #cbf3dc;
+    --successGreenBorder: #97e6b8;
+    --successGreenFont: #2ecc71;
+    --marginValue: 0 12%;
+
 }
 
 * {
@@ -12,14 +17,4 @@
 
 body {
     min-height: 98vh;
-}
-
-.App {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* margin: 18rem; */
-    /* width: 100vh; */
-    min-height: 98vh;
-
 }

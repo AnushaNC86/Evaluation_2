@@ -24,6 +24,8 @@ const SignUp = () => {
               type="password"
               name="mpin"
               id="mpin"
+              minLength={4}
+              maxLength={4}
               className="inputFields"
               placeholder="Enter 4 Digit MPin"
             />
@@ -35,6 +37,8 @@ const SignUp = () => {
               type={password ? "text" : "password"}
               name="cmpin"
               id="cmpin"
+              minLength={4}
+              maxLength={4}
               className="inputFields"
               placeholder="Re-enter 4 Digit MPin"
             />

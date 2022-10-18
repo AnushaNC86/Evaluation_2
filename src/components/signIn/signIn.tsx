@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 
 import "./signIn.css";
+import Toast from "../toast/toast";
 
 const SignIn = () => {
   const [password, setPassword] = useState<boolean>(false);
@@ -28,6 +29,8 @@ const SignIn = () => {
               type={password ? "text" : "password"}
               name="mpin"
               id="mpin"
+              minLength={4}
+              maxLength={4}
               className="inputFields"
               placeholder="Mpin"
             />

@@ -112,3 +112,15 @@
     right: 14px;
     cursor: pointer;
 }
+
+.signUpLink {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-decoration: none;
+    cursor: pointer;
+
+}

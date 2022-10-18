@@ -4,10 +4,12 @@ import "./loginPage.css";
 
 const LoginPage = () => {
   return (
-    <div className="loginContainer">
-      <Logo />
-      <div className="signIn">
-        <SignIn />
+    <div className="login">
+      <div className="loginContainer">
+        <Logo />
+        <div className="signIn">
+          <SignIn />
+        </div>
       </div>
     </div>
   );
