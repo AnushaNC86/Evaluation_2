@@ -1,4 +1,5 @@
 import SideBar from "../../components/sidebar/sideBar";
+import TopBar from "../../components/topBar/topBar";
 import "./homePage.css";
 
 const HomePage = () => {
@@ -8,7 +9,9 @@ const HomePage = () => {
         <div className="sideBar">
           <SideBar />
         </div>
-        <div className="topBar">Top</div>
+        <div className="topBar">
+          <TopBar />
+        </div>
         <div className="Body">Body</div>
       </div>
     </div>
