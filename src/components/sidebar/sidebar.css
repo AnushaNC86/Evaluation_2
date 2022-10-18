@@ -27,7 +27,7 @@
 .logoHome {
     border-radius: -9px;
     width: 100%;
-    border-left: 4px solid #FFA043;
+    border-left: 4px solid var(--activeColor);
     display: flex;
     justify-content: center;
     padding: 20px 0;
@@ -37,7 +37,7 @@
     position: absolute;
     width: 15px;
     height: 15px;
-    background-color: #FFA043;
+    background-color: var(--activeColor);
     border-radius: 50%;
     top: 13rem;
     left: 7.5rem;

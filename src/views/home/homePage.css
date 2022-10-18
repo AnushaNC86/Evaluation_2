@@ -5,10 +5,9 @@
 
 .topBar {
     position: absolute;
-    bottom: 10px;
     left: 7.65rem;
+    top: -8px;
     right: 0;
-    background-color: #cbd3e2;
+    background: #d5dcebbd;
     right: 0;
-    background-color: #cbd3e2;
 }

@@ -1,7 +1,11 @@
 .topBarContainer {
+
     margin-top: 30px;
+    width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    padding: 0 83px;
+
 
 }
