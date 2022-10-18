@@ -12,7 +12,6 @@ const SideBar = () => {
           <img src={require("../../assets/icons/home_icn.png")} alt="" />
         </div>
         <div className="active"></div>
-        <div className="homeIcn"></div>
       </div>
     </div>
   );

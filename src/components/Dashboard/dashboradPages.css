@@ -1,0 +1,217 @@
+.body {
+    display: flex;
+    padding: 1rem 4rem;
+}
+
+.homeBodyContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bodySearch {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bodySearchAndAdd {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 7%;
+}
+
+.bodyHeading {
+    color: #3C4857;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom: 4px solid var(--activeColor);
+    width: 38px;
+}
+
+.bodyAdd img {
+    transform: rotate(45deg);
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    width: 17rem;
+    border-bottom: 1px solid var(--backgroundColor);
+    color: #A5A5A5;
+
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 103px;
+    top: 11px;
+}
+
+.addNew {
+    position: absolute;
+    left: -2.2rem;
+    right: 0;
+    top: 331px;
+    background-color: #F5F7FB;
+    display: flex;
+    justify-content: center;
+    border-radius: 21.7rem;
+
+}
+
+.addNewSite {
+    padding: 2.5rem 3rem;
+    color: #3C4857;
+    font-size: 21px;
+    letter-spacing: 0;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+}
+
+
+.addedSitesHead {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-top: 32px;
+}
+
+.socialMedia {
+    color: #3C4857;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 33px;
+}
+
+.socialMediaCount {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    height: 37px;
+    width: 37px;
+    border: 1px solid #ffffff;
+    background: #0e85ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+}
+
+.siteContents {
+    margin-top: 31px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.cardUpper {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardContents {
+    width: 363px;
+    background-color: #ffffff;
+    border-radius: 1em;
+    padding: 12px 20px;
+}
+
+.cardUpper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cardCopy {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.cardTitle {
+    color: #0e85ff;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 27px;
+    padding-bottom: 6px;
+}
+
+.cardCopy div {
+    color: #0e85ff;
+    font-size: 12.6px;
+    letter-spacing: 0;
+    line-height: 17px;
+}
+
+.cardLink {
+    color: #3c4857;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 22px;
+    text-align: center;
+    background-color: #f5f7fb65;
+    width: 363px;
+    position: relative;
+    border: radius;
+    border-radius: 0 0 15px 15px;
+    margin-left: -19.7px;
+    margin-bottom: -12px;
+    padding: 12px 0;
+}
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal,
+.overlay {
+    width: 69.1vw;
+    height: 100vh;
+    top: 13.8%;
+    right: 12.3%;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49, 49, 49, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}

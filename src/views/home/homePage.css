@@ -10,4 +10,13 @@
     right: 0;
     background: #d5dcebbd;
     right: 0;
+    padding: 2rem 4rem;
+}
+
+.Body {
+    position: absolute;
+    left: 11.5rem;
+    top: 12rem;
+    right: 0;
+    padding: 0 3.5rem 0 0;
 }

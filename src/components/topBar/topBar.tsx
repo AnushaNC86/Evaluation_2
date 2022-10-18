@@ -6,7 +6,14 @@ const TopBar = () => {
       <div className="topBarLogo">
         <img src={require("../../assets/icons/pass_logo.png")} alt="logoPass" />
       </div>
-      <div className="topBarChoices">optoons</div>
+      <div className="topBarChoices">
+        <div className="syncIcon">
+          <img src={require("../../assets/icons/sync.png")} alt="" />
+        </div>
+        <div className="profileIcon">
+          <img src={require("../../assets/icons/profile.png")} alt="" />
+        </div>
+      </div>
     </div>
   );
 };

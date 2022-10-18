@@ -1,3 +1,4 @@
+import HomeBody from "../../components/Dashboard/dashboradPages";
 import SideBar from "../../components/sidebar/sideBar";
 import TopBar from "../../components/topBar/topBar";
 import "./homePage.css";
@@ -12,7 +13,9 @@ const HomePage = () => {
         <div className="topBar">
           <TopBar />
         </div>
-        <div className="Body">Body</div>
+        <div className="Body">
+          <HomeBody />
+        </div>
       </div>
     </div>
   );

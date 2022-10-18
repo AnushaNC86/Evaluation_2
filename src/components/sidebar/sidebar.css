@@ -25,7 +25,6 @@
 }
 
 .logoHome {
-    border-radius: -9px;
     width: 100%;
     border-left: 4px solid var(--activeColor);
     display: flex;
