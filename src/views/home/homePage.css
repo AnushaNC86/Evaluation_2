@@ -11,6 +11,7 @@
     background: #d5dcebbd;
     right: 0;
     padding: 2rem 4rem;
+    z-index: 2;
 }
 
 .Body {

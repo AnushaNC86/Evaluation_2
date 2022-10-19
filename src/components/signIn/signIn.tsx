@@ -1,19 +1,62 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-
 import "./signIn.css";
 import Toast from "../toast/toast";
 
 const SignIn = () => {
+  const navigate = useNavigate();
   const [password, setPassword] = useState<boolean>(false);
 
   const togglePassword = () => {
     setPassword(!password);
   };
+
+  if (localStorage.getItem("users") === null) {
+    localStorage.setItem(
+      "user Data",
+      JSON.stringify(
+        localStorage.setItem(
+          "users",
+          JSON.stringify([
+            { mobileNo: "9945810342", mPin: "9945" },
+            { mobileNo: "9945810341", mPin: "9945" },
+          ])
+        )
+      )
+    );
+  }
+
+  const onsubmitHandler = (e: any) => {
+    e.preventDefault();
+    type usersType = { mobileNo: number; mPin: number };
+
+    const mobileNo = e.target.mobile.value;
+    const mPin = e.target.mpin.value;
+
+    const userData = { mobileNo, mPin };
+    console.log("userData", userData);
+
+    const users: usersType[] = JSON.parse(
+      localStorage.getItem("users") || "[]"
+    );
+    console.log("users", users);
+
+    for (let i = 0; i < users.length; i++) {
+      if (userData.mobileNo === users[i].mobileNo) {
+        if (userData.mPin === users[i].mPin) {
+          localStorage.setItem("auth", "authenticated");
+          navigate("/home");
+          localStorage.setItem("currentUser", mobileNo);
+          window.location.reload();
+        }
+      }
+    }
+  };
+
   return (
     <div>
       <div className="signInHead">SIGN IN TO YOUR ACCOUNT</div>
-      <form className="formContianer">
+      <form className="formContianer" onSubmit={onsubmitHandler}>
         <div className="inputField">
           <input
             type="text"
@@ -27,7 +70,8 @@ const SignIn = () => {
           <div className="loginPW">
             <input
               type={password ? "text" : "password"}
-              name="mpin"
+              name="
+              mpin"
               id="mpin"
               minLength={4}
               maxLength={4}

@@ -88,7 +88,7 @@ const HomeBody = () => {
         <div className="addedSitesContainer">
           <div className="addedSitesHead">
             <div className="socialMedia">Social Media</div>
-            <div className="socialMediaCount">07</div>
+            <div className="socialMediaCount">{data.length}</div>
             <div className="dropDownMedia">
               <img src={require("../../assets/icons/drop_down.png")} alt="" />
             </div>

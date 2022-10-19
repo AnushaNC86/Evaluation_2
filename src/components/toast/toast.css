@@ -1,7 +1,7 @@
 .toastBar {
     position: absolute;
-    top: 10.5em;
-    left: 36rem;
+    top: 7.5em;
+    left: 37rem;
     background-color: var(--successGreen);
     border: 1px solid var(--successGreenBorder);
     z-index: 1;
