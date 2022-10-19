@@ -16,7 +16,7 @@ const Register = () => {
   }, 2000);
   return (
     <div className="login">
-      {toast ? <Toast /> : ""}
+      {/* {toast ? <Toast /> : ""} */}
       <div className="loginContainer">
         <Logo />
         <div className="signIn">

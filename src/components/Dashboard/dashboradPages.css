@@ -183,7 +183,7 @@ body.active-modal {
 }
 
 .modal,
-.overlay {
+.modalCover {
     width: 69.1vw;
     height: 100vh;
     top: 13.8%;
@@ -192,26 +192,115 @@ body.active-modal {
     position: fixed;
 }
 
-.overlay {
+.modalCover {
     background: rgba(49, 49, 49, 0.8);
 }
 
-.modal-content {
-    position: absolute;
+.modalContent {
+    position: relative;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
-    background: #f1f1f1;
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 600px;
-    min-width: 300px;
+    background-color: #ffffff;
+    padding: 30.5px 37.5px;
+    border-radius: 0.8em;
+    display: flex;
+    flex-direction: column;
+    width: 72%;
 }
 
-.close-modal {
+.modalCloseBtn {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 35rem;
+    left: 46rem;
     padding: 5px 7px;
+}
+
+.modalInput {
+    border: none;
+    outline: none;
+    border: 1px solid #f5f7fb;
+    border-radius: 4px;
+    background-color: #212b3f;
+    height: 36px;
+    padding: 10px;
+    width: 90%;
+
+}
+
+.modalHeading {
+    color: #3c4857;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 41px;
+    margin-bottom: 41px;
+}
+
+.modalForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 26px;
+    grid-column-gap: 20px;
+}
+
+.inputField {
+    grid-column: span 2;
+}
+
+.txtField div,
+.url {
+    color: #949ca5;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 49px;
+
+}
+
+.modalInputNotes {
+    border: none;
+    outline: none;
+    border: 1px solid #f5f7fb;
+    border-radius: 4px;
+    background-color: #f5f7fb;
+    height: 29px;
+    padding: 10px;
+    width: 100%;
+}
+
+.modalButtons {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.resetBtn {
+    background: none;
+    height: 46px;
+    width: 181px;
+    border: 1px solid #0e85ff;
+    border-radius: 4px;
+    color: #0e85ff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    text-align: center;
+
+
+}
+
+.saveBtn {
+    background-color: #0e85ff;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 24px;
+    height: 46px;
+    width: 181px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
 }

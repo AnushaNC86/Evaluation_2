@@ -134,22 +134,62 @@ const HomeBody = () => {
       )}
       {modal && (
         <>
-          {/* <Modal modelState={getModalState} /> */}
           <div className="modal">
-            <div className="overlay"></div>
-            <div className="modal-content">
-              <h2>Hello Modal</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident perferendis suscipit officia recusandae, eveniet
-                quaerat assumenda id fugit, dignissimos maxime non natus placeat
-                illo iusto! Sapiente dolorum id maiores dolores? Illum pariatur
-                possimus quaerat ipsum quos molestiae rem aspernatur dicta
-                tenetur. Sunt placeat tempora vitae enim incidunt porro fuga ea.
-              </p>
-              <button className="close-modal" onClick={showModal}>
-                CLOSE
-              </button>
+            <div className="modalCover"></div>
+            <div className="modalContent">
+              <div className="modalCloseBtn" onClick={showModal}>
+                <img src={require("../../assets/icons/close_btn.png")} alt="" />
+              </div>
+              <div className="modalHead">
+                <div className="modalHeading">Add Site</div>
+              </div>
+              <div className="modalBody">
+                <form className="modalForm">
+                  <div className="inputField">
+                    <div className="url">URL</div>
+                    <input type="text" name="url" className="modalInput" />
+                  </div>
+                  <div className="inputFiledItems">
+                    <div className="txtField">
+                      <div>Site Name</div>
+                      <input
+                        type="text"
+                        name="siteName"
+                        className="modalInput"
+                      />
+                    </div>
+                    <div className="txtField">
+                      <div>Sector/Folder</div>
+                      <input type="text" name="sector" className="modalInput" />
+                    </div>
+                  </div>
+                  <div className="inputFiledItems">
+                    <div className="txtField">
+                      <div>Site Name</div>
+                      <input
+                        type="text"
+                        name="siteName"
+                        className="modalInput"
+                      />
+                    </div>
+                    <div className="txtField">
+                      <div>Sector/Folder</div>
+                      <input type="text" name="sector" className="modalInput" />
+                    </div>
+                  </div>
+                  <div className="txtField inputField">
+                    <div>Notes</div>
+                    <textarea className="modalInputNotes" name="notes" />
+                  </div>
+                  <div></div>
+                  <div className="modalButtons">
+                    <button className="resetBtn">Reset</button>
+                    <button className="saveBtn" type="submit">
+                      Save
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </>
