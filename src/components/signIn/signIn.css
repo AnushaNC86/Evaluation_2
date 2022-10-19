@@ -35,14 +35,14 @@
     font-weight: 600;
     letter-spacing: 1.67px;
     line-height: 27px;
-    margin: 0 11px 1rem 1rem;
+    margin: 0px 10px 1.5rem 3rem;
 }
 
 .inputFields {
-    width: 100%;
+    width: 107%;
     height: 54px;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 24px 20px;
+    margin: 15px 4rem 0rem 0;
     display: inline-block;
     border: 0.55px solid rgba(208, 208, 208, 0.5);
     border-radius: 4px;
@@ -108,8 +108,15 @@
 
 .eyeIcon {
     position: absolute;
-    top: 22px;
+    top: 31px;
     right: 14px;
+    cursor: pointer;
+}
+
+.eyeIcon1 {
+    position: absolute;
+    top: 31px;
+    right: -5px;
     cursor: pointer;
 }
 

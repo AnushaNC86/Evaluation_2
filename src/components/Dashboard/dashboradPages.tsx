@@ -30,13 +30,32 @@ const HomeBody = () => {
     },
 
     {
-      siteName: "Linkedin",
-      url: "www.linkedin.com",
+      siteName: "Pinterest",
+      url: "www.Pinterest.com",
       sector: "Social Media",
       userName: "john",
       sitePassword: "abcd111",
       notes: "",
-      icon: require("../../assets/icons/LinkdIn.png"),
+      icon: require("../../assets/icons/Pinterest.png"),
+    },
+    {
+      siteName: "Twitter",
+      url: "www.twitter.com",
+      sector: "Social Media",
+      userName: "John",
+      sitePassword: "abcd123",
+      notes: "",
+      icon: require("../../assets/icons/Twitter.png"),
+    },
+
+    {
+      siteName: "Gmail",
+      url: "www.gmail.com",
+      sector: "Social Media",
+      userName: "john",
+      sitePassword: "abcd111",
+      notes: "",
+      icon: require("../../assets/icons/Gmail.png"),
     },
   ];
 

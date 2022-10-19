@@ -16,12 +16,19 @@
 
 }
 
+.logoMobile {
+    display: none;
+}
+
 
 @media only screen and (max-width: 700px) {
     .loginContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
     }
 
     .logo {
@@ -29,4 +36,139 @@
         border-bottom: 0.5px solid rgb(255 251 251 / 24%);
         display: flex;
     }
+
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .bodySearchAndAdd {
+        display: none;
+    }
+
+    .sideBarContainer {
+        display: none;
+    }
+
+    .topBar {
+        position: relative;
+        background: var(--backgroundColor);
+    }
+
+    .topBarContainer {
+        display: none;
+    }
+
+    .topBarMobile {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .topBarLeft {
+        display: flex;
+        gap: 10px
+    }
+
+
+    .App {
+        margin: 0
+    }
+
+    .topBarRight {
+        display: flex;
+        gap: 10px
+    }
+
+    .sideBar {
+        display: none;
+    }
+
+    .Body {
+        position: absolute;
+        top: 7rem;
+
+    }
+
+    .home {
+
+        margin: var(--marginValue);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .logoMobile {
+        display: block;
+        padding-bottom: 90px;
+    }
+
+    .logoWeb {
+        display: none;
+    }
+
+    .logoText div {
+        display: none;
+    }
+
+    .signInHead,
+    .signInHeading {
+        display: none;
+    }
+
+    .inputFields {
+        width: 100%;
+    }
+
+    .signIn {
+        padding: 0;
+    }
+
+    .signUp {
+        display: none;
+    }
+
+    .eyeIcon {
+        position: absolute;
+        top: 28px;
+        right: 14px;
+        cursor: pointer;
+    }
+
+    .login {
+        position: fixed
+    }
+
+    .tabsContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .linkToSignin {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .topBarContainer {
+        display: none;
+    }
+
+    .topBarMobile {
+        display: flex;
+    }
+
+    .sideBarContainer {
+        display: none;
+    }
+
+    .addedSitesContainer {
+        left: 0;
+        right: 0;
+    }
+
+    .topBarMobile {
+        background-color: blues;
+    }
+
+
 }

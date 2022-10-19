@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Toast from "../toast/toast";
 
 const SignUp = () => {
   const [password, setPassword] = useState(false);
@@ -85,7 +84,7 @@ const SignUp = () => {
         <div className="inputField">
           <div className="loginPW">
             <input
-              type="password"
+              type="text"
               name="newMPin"
               id="mpin"
               minLength={4}
@@ -109,7 +108,7 @@ const SignUp = () => {
             <img
               src={require("../../assets/icons/eye_on.png")}
               alt="Password Eye"
-              className="eyeIcon"
+              className="eyeIcon1"
               onClick={togglePassword}
             />
           </div>

@@ -18,8 +18,8 @@ const SignIn = () => {
         localStorage.setItem(
           "users",
           JSON.stringify([
-            { mobileNo: "9945810342", mPin: "9945" },
-            { mobileNo: "9945810341", mPin: "9945" },
+            { mobileNo: "6362637245", mPin: "1807" },
+            { mobileNo: "948148997", mPin: "0718" },
           ])
         )
       )
@@ -57,7 +57,7 @@ const SignIn = () => {
     <div>
       <div className="signInHead">SIGN IN TO YOUR ACCOUNT</div>
       <form className="formContianer" onSubmit={onsubmitHandler}>
-        <div className="inputField">
+        <div className="inputField1">
           <input
             type="text"
             name="mobile"
@@ -66,7 +66,7 @@ const SignIn = () => {
             placeholder="Mobile number"
           />{" "}
         </div>
-        <div className="inputField">
+        <div className="inputField1">
           <div className="loginPW">
             <input
               type={password ? "text" : "password"}

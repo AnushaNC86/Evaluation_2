@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 2rem 2rem 13px;
 }
 
 .logo {
@@ -21,6 +21,8 @@
     text-align: center;
     margin-top: 20px;
 
+}
 
-
+.tabsContainer {
+    display: none;
 }
