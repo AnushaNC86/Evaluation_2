@@ -1,8 +1,12 @@
 import "./toast.css";
-const Toast = () => {
+
+type toastProps = {
+  message: string;
+};
+const Toast = (props: toastProps) => {
   return (
     <div className="toastBar">
-      <div className="toastMsg">Successfully signed in!!</div>
+      <div className="toastMsg">{props.message}</div>
       <div className="toastClose">x</div>
     </div>
   );

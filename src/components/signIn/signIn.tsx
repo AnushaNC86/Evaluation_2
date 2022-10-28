@@ -45,6 +45,7 @@ const SignIn = () => {
       if (userData.mobileNo === users[i].mobileNo) {
         if (userData.mPin === users[i].mPin) {
           localStorage.setItem("auth", "authenticated");
+          sessionStorage.setItem("signInSuccess", "true");
           navigate("/home");
           localStorage.setItem("currentUser", mobileNo);
           window.location.reload();

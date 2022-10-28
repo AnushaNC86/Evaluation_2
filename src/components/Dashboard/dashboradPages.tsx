@@ -4,6 +4,7 @@ import "./dashboradPages.css";
 const HomeBody = () => {
   const [contents, setContents] = useState<boolean>(false);
   const [modal, setModal] = useState(false);
+  const [term, setTerm] = useState("");
 
   const showModal = () => {
     setModal(!modal);
@@ -67,6 +68,10 @@ const HomeBody = () => {
 
   console.log(data);
 
+  const filteredData = data.filter((ele: any) =>
+    ele.siteName.toLowerCase().includes(term.toLowerCase())
+  );
+
   return (
     <div>
       <div className="homeBodyContainer">
@@ -78,6 +83,9 @@ const HomeBody = () => {
               className="searchInput"
               name="search"
               placeholder="Search"
+              onChange={(e: any) => {
+                setTerm(e.target.value);
+              }}
             />
             <img
               src={require("../../assets/icons/search.png")}
